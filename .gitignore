@@ -1,0 +1,8 @@
+Certificate/
+.DS_Store
+frontend/.DS_Store
+backend/realm_config.json
+frontend/iOS-app/GoogleService-Info.plist
+frontend/iOS-app/App/Utils/Realm.plist
+
+frontend/web-app/

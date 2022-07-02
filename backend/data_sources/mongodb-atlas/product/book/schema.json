@@ -1,0 +1,240 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "accessInfo": {
+            "bsonType": "object",
+            "properties": {
+                "accessViewStatus": {
+                    "bsonType": "string"
+                },
+                "country": {
+                    "bsonType": "string"
+                },
+                "embeddable": {
+                    "bsonType": "bool"
+                },
+                "epub": {
+                    "bsonType": "object",
+                    "properties": {
+                        "acsTokenLink": {
+                            "bsonType": "string"
+                        },
+                        "downloadLink": {
+                            "bsonType": "string"
+                        },
+                        "isAvailable": {
+                            "bsonType": "bool"
+                        }
+                    },
+                    "title": "EPub"
+                },
+                "pdf": {
+                    "bsonType": "object",
+                    "properties": {
+                        "acsTokenLink": {
+                            "bsonType": "string"
+                        },
+                        "isAvailable": {
+                            "bsonType": "bool"
+                        }
+                    },
+                    "title": "PDF"
+                },
+                "publicDomain": {
+                    "bsonType": "bool"
+                },
+                "quoteSharingAllowed": {
+                    "bsonType": "bool"
+                },
+                "textToSpeechPermission": {
+                    "bsonType": "string"
+                },
+                "viewability": {
+                    "bsonType": "string"
+                },
+                "webReaderLink": {
+                    "bsonType": "string"
+                }
+            },
+            "title": "AccessInfo"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "saleInfo": {
+            "bsonType": "object",
+            "properties": {
+                "buyLink": {
+                    "bsonType": "string"
+                },
+                "country": {
+                    "bsonType": "string"
+                },
+                "isEbook": {
+                    "bsonType": "bool"
+                },
+                "listPrice": {
+                    "bsonType": "object",
+                    "properties": {
+                        "amount": {
+                            "bsonType": "double"
+                        },
+                        "currencyCode": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "ListPrice"
+                },
+                "offers": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "finskyOfferType": {
+                                "bsonType": "int"
+                            },
+                            "listPrice": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "amountInMicros": {
+                                        "bsonType": "int"
+                                    },
+                                    "currencyCode": {
+                                        "bsonType": "string"
+                                    }
+                                },
+                                "title": "OfferListPrice"
+                            },
+                            "retailPrice": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "amountInMicros": {
+                                        "bsonType": "int"
+                                    },
+                                    "currencyCode": {
+                                        "bsonType": "string"
+                                    }
+                                },
+                                "title": "OfferRetailPrice"
+                            }
+                        },
+                        "title": "Offers"
+                    }
+                },
+                "retailPrice": {
+                    "bsonType": "object",
+                    "properties": {
+                        "amount": {
+                            "bsonType": "double"
+                        },
+                        "currencyCode": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "RetailPrice"
+                },
+                "saleability": {
+                    "bsonType": "string"
+                }
+            },
+            "title": "SalesInfo"
+        },
+        "selfLink": {
+            "bsonType": "string"
+        },
+        "volumeInfo": {
+            "bsonType": "object",
+            "properties": {
+                "authors": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "averageRating": {
+                    "bsonType": "double"
+                },
+                "categories": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "imageLinks": {
+                    "bsonType": "object",
+                    "properties": {
+                        "smallThumbnail": {
+                            "bsonType": "string"
+                        },
+                        "thumbnail": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "imageLinks"
+                },
+                "industryIdentifiers": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "identifier": {
+                                "bsonType": "string"
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "title": "IndustryIdentifiers"
+                    }
+                },
+                "language": {
+                    "bsonType": "string"
+                },
+                "publishedDate": {
+                    "bsonType": "string"
+                },
+                "publisher": {
+                    "bsonType": "string"
+                },
+                "ratingsCount": {
+                    "bsonType": "int"
+                },
+                "readingModes": {
+                    "bsonType": "object",
+                    "properties": {
+                        "image": {
+                            "bsonType": "bool"
+                        },
+                        "text": {
+                            "bsonType": "bool"
+                        }
+                    },
+                    "title": "ReadingModes"
+                },
+                "subtitle": {
+                    "bsonType": "string"
+                },
+                "summary": {
+                    "bsonType": "string"
+                },
+                "title": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [
+                "title"
+            ],
+            "title": "VolumeInfo"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition"
+    ],
+    "title": "Book"
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "name": "updateUser",
+        "private": true
+    },
+    {
+        "name": "createNewUser",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "deleteAnonymousUser",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "resetFunc",
+        "private": false,
+        "can_evaluate": {}
+    },
+    {
+        "name": "updateCustomData",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "updateFCMUserToken",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "onBookUpdated",
+        "private": true
+    },
+    {
+        "name": "sentPushNotification",
+        "private": true,
+        "run_as_system": true,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "sentTopicNotification",
+        "private": true
+    }
+]

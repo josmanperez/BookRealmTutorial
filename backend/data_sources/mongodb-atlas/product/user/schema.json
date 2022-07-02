@@ -1,0 +1,55 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "favoriteBooks": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "favoriteRelatedBooks": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "providerType": {
+            "bsonType": "object",
+            "properties": {
+                "id": {
+                    "bsonType": "string"
+                },
+                "provider_type": {
+                    "bsonType": "string"
+                }
+            },
+            "title": "ProviderType"
+        },
+        "registered": {
+            "bsonType": "bool"
+        },
+        "userName": {
+            "bsonType": "string"
+        },
+        "userPreferences": {
+            "bsonType": "object",
+            "properties": {
+                "displayName": {
+                    "bsonType": "string"
+                }
+            },
+            "title": "UserPreferences"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "registered"
+    ],
+    "title": "User"
+}
